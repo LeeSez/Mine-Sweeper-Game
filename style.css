@@ -1,0 +1,152 @@
+body{
+    flex-flow: column wrap;
+    font-family: 'Lilita One', cursive;
+}
+.center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#container{
+    flex-wrap: wrap;
+    background-color: #CDDEFF;
+
+    width: 500px;
+    padding:30px;
+    border-radius: 20px;
+}
+.cell{
+    background-color:#676FA3;
+    margin: 2px;
+    border-radius: 2px;
+    width:28px;
+    height: 28px;
+
+    text-align:center;
+    color:black;
+}
+.white{
+    background-color:white;
+}
+.mine{
+    background-color: rgb(255, 89, 89);
+}
+.correct{
+    background-color: #63B995;
+}
+
+.finalNote {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+
+    position: absolute;
+    top: 250px;
+    visibility: hidden;
+
+    font-size:2em;
+    text-align: center;
+}
+
+#winningNote{
+    border: 5px solid rgba(246, 189, 96,0.8);
+
+    background-color: rgba(247, 237, 226,0.8);
+    color: #84a59d;
+}
+.para{
+    margin-bottom: 15px;
+}
+
+#loosingNote{
+    background-color: rgba(151, 210, 251,0.8);
+    color:white;
+
+    border: 5px solid rgb(131, 188, 255,0.8);
+}
+
+button{
+    width: 80px;
+    height: 40px;
+
+    border:none;
+    border-radius: 5px;
+
+    background-color: rgba(12, 9, 13,0.8);
+    color:white;
+
+    font-family: inherit;
+    font-size: 0.5em;
+    font-weight: lighter;
+}
+
+#mineCount{
+    text-align: center;
+    color:white;
+    font-weight: lighter;
+
+    width: inherit;
+    margin: 0;
+    padding: 10px 10px;
+
+    background-color: #63B995;
+    border-radius: 5px 5px 0 0;
+}
+
+#mineCount::before{
+    content: "remaining mines: ";
+    color:black;
+}
+
+#mineSlider{
+    width: inherit;
+    margin: 0;
+    padding: 10px 10px;
+
+    text-align: center;
+
+    background-color: #77dbb1;
+    border-radius:0 0 5px 5px;
+}
+
+#sidebar {
+    width:140px;
+    height:400px;
+    
+    position: relative;
+    top:-500px;
+    left:-400px;
+
+    display:flex;
+    flex-direction: column;
+}
+
+#minesAmount {
+    -webkit-appearance: none; 
+    appearance: none;
+    border-radius: 8px;
+    width:inherit;
+    height:10px;
+    background-color: white;
+}
+#minesAmount::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 15px; 
+    height: 15px; 
+    background: rgb(215, 215, 215); 
+    cursor: pointer; 
+    border-radius: 50%;
+}
+#minesAmount::-moz-range-thumb {
+    width: 15px; 
+    height: 15px; 
+    background: #04AA6D; 
+    cursor: pointer; 
+}
+
