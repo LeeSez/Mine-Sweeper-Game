@@ -16,6 +16,7 @@ body{
     border-radius: 20px;
 }
 .cell{
+    /*The regular style of a cell*/
     background-color:#676FA3;
     margin: 2px;
     border-radius: 2px;
@@ -26,16 +27,45 @@ body{
     color:black;
 }
 .white{
+    /*style of a revealed cell*/
     background-color:white;
 }
+
+
 .mine{
+    /*style of a mine/marked cell*/
     background-color: rgb(255, 89, 89);
 }
+#redText{
+    font-size: smaller;
+    color:rgb(255, 89, 89);
+}
+
 .correct{
+    /*style of a correctly marked mine*/
     background-color: #63B995;
+}
+#greenText {
+    font-size: smaller;
+    color:#63B995;
+}
+
+.worng{
+    /*style of an incorrectly marked mine*/
+    background-color: rgb(67, 67, 67);
+}
+#blackText {
+    font-size: smaller;
+    color:rgb(67, 67, 67);
+}
+
+.colorGuideText{
+    font-size: smaller;
+    margin-top:0px;
 }
 
 .finalNote {
+    /*general style of the win & lose end note*/
     width: 300px;
     height: 200px;
     display: flex;
@@ -60,6 +90,7 @@ body{
     color: #84a59d;
 }
 .para{
+    /*changed the paragraph's margin*/
     margin-bottom: 15px;
 }
 
@@ -71,6 +102,7 @@ body{
 }
 
 button{
+    /*general style of buttons*/
     width: 80px;
     height: 40px;
 
@@ -86,6 +118,7 @@ button{
 }
 
 #mineCount{
+    /*the mine counter style*/
     text-align: center;
     color:white;
     font-weight: lighter;
@@ -104,6 +137,7 @@ button{
 }
 
 #mineSlider{
+    /*the lable and the input's div*/
     width: inherit;
     margin: 0;
     padding: 10px 10px;
@@ -115,6 +149,7 @@ button{
 }
 
 #sidebar {
+    /*a side bar that holds the ui of game settings - you can still add many bars to it*/
     width:140px;
     height:400px;
     
@@ -126,6 +161,7 @@ button{
     flex-direction: column;
 }
 
+/*the range input styling*/
 #minesAmount {
     -webkit-appearance: none; 
     appearance: none;

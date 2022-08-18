@@ -23,6 +23,10 @@
                 <label for="minesAmount">Difficulty</label>
                 <input id="minesAmount" name="minesAmount" onchange="changeMinesAmountInput(this)" type="range" min="3" max="40" />    
             </div>
+            <p>color guide</p>
+            <p id="greenText" class="colorGuideText">correctly marked mine</p>
+            <p id="blackText" class="colorGuideText">incorrectly marked mine</p>
+            <p id="redText" class="colorGuideText">unmarked mine</p>
         </div>
 
         <div class="finalNote" id="winningNote">
